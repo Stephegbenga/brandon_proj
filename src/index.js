@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
+import Home from './views/home'
 import Index from './views/index'
 import NotFound from './views/not-found'
 
@@ -15,7 +16,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Index} exact path="/" />
+        <Route component={Home} exact path="/" />
+        <Route component={Index} exact path="/index" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
