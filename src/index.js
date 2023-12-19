@@ -16,9 +16,9 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route component={Home} exact path="/" />
+        <Route component={Index} exact path="/" />
         <Route component={Index} exact path="/index" />
-        <Route component={NotFound} path="**" />
+        <Route component={Index} path="**" />
         <Redirect to="**" />
       </Switch>
     </Router>
